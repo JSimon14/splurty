@@ -1,4 +1,9 @@
 Splurty::Application.routes.draw do
+
+  root 'quotes#index'
+
+  resources :quotes
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,6 +58,6 @@ Splurty::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-root 'quotes#index'
+
 
 end
